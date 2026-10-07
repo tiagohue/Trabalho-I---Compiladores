@@ -1,5 +1,3 @@
-#define LEXER_H
-
 #include <stdio.h>
 
 #define MAX_LEXEM_LEN 128

@@ -40,10 +40,27 @@ static void skipSpaceAndComments(void)
                 }
             }
             else if (next == '*')
-            {
+            { // descarta blocos de comentários
                 int prev = 0;
 
-                while
+                while ((c = fgetc(sourceFile)) != EOF)
+                {
+                    if (c == '\n')
+                    {
+                        currentLine++;
+                    }
+                    if (prev == '*' && c == '/')
+                    {
+                        break;
+                    }
+                    prev = c;
+                }
+            }
+            else
+            { // era só uma barra
+                ungetc(next, sourceFile);
+                ungetc(c, sourceFile);
+                return;
             }
         }
     }
