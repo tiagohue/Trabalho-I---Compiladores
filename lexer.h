@@ -35,3 +35,5 @@ typedef struct
     char lexeme[MAX_LEXEM_LEN];
     int line;
 } Token;
+
+Token getNextToken(void);
