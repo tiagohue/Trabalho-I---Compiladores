@@ -9,6 +9,8 @@ O programa realiza a leitura de arquivos de entrada contendo declarações de va
 
 A gramática livre de contexto que rege a linguagem do tradutor é definida pelas seguintes regras de produção:
 
+**OBSERVAÇÃO**: As regras de produção estão um pouco diferentes das especificadas no arquivo pois dessa forma evitam a recursão à esquerda.
+
 ```text
 program -> Matexpr block
 block   -> { decls stmts }
