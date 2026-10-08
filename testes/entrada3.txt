@@ -1,0 +1,4 @@
+Matexpr {
+    int x;
+    a + * 2
+}
