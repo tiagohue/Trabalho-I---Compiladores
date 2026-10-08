@@ -176,13 +176,13 @@ static void fact(void)
     }
     else if (lookahead.type == TOK_NUM)
     {
-        match(TOK_NUM);
         printf("%s ", lookahead.lexeme);
+        match(TOK_NUM);
     }
     else if (lookahead.type == TOK_ID)
     {
-        match(TOK_ID);
         printf("%s ", lookahead.lexeme);
+        match(TOK_ID);
     }
     else
     {

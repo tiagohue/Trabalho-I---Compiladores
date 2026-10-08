@@ -1,0 +1,16 @@
+Matexpr {
+    // Declaracao de variaveis
+    int a;
+    int b;
+    float resultado;
+    /* Expressao 1: testa precedencia de multiplicacao
+    e divisao antes da soma e subtracao */
+    a + b * 4 - 10 / 2
+    // Expressao 2: testa uso de parenteses e numeros decimais
+    (a + b) * (resultado - 3.14)
+    /* Bloco aninhado */
+    {
+        float temp;
+        temp + a * 2
+    }
+}

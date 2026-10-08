@@ -36,4 +36,5 @@ typedef struct
     int line;
 } Token;
 
+void initLexer(FILE *file);
 Token getNextToken(void);

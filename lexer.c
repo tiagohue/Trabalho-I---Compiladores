@@ -63,6 +63,11 @@ static void skipSpaceAndComments(void)
                 return;
             }
         }
+        else
+        { // nao era espaco nem comentario
+            ungetc(c, sourceFile);
+            return;
+        }
     }
 }
 
